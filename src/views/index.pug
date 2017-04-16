@@ -1,0 +1,248 @@
+doctype html
+<!--[if IE 8]>         <html class="ie8 oldie"lang="en"> <![endif]-->
+<!--[if IE 9]>         <html class="ie9 oldie"lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="" lang="en"> <!--<![endif]-->
+  include shared/head.pug
+
+  body
+    include shared/header-abs.pug
+    
+    // HERO :: START
+    .hero
+      .container
+        .row
+          .col-sm-12
+            .hero__content
+              .text-center
+                .hero__title Manage all your department’s <br> locum needs
+                .hero__description Software to create and manage your hospital <br> department locum bank allowing you to quickly <br> find and book locum doctors
+              .hero__form
+                form(action='#')
+                  .hero__form__title get started now
+                  .row
+                    .col-sm-4
+                      .ui-input.ui-input--muted
+                        input(type='email' placeholder='Email')
+                    .col-sm-4
+                      .ui-input.ui-input--muted
+                        input(type='text' placeholder='Hospital')    
+                    .col-sm-4
+                      .ui-input.ui-input--muted
+                        input(type='text' placeholder='Department')
+                               
+                  .hero__cta
+                    a(href='#').btn.btn--green.btn--block
+                      span Request Your Free Trial
+
+                  
+    // TEXT SECTION :: START
+    .section.section--gray#sectionAbout
+      .container
+        .row
+          .col-sm-12.col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2.text-center
+            .section-title.section-title--green Finding locum doctors shouldn’t have <br> to be a headache
+            .section-text.mt60.mt30--tablet
+              p Almost every NHS hospital department is currently facing challenges with vacant shifts and finding locum doctors. Traditional methods of email/telephone calls often fail and locum agencies are often a let own on price and quality. 
+
+              p We’re out to fix by giving departments the right toolset to quickly find and book <br> locum doctors, and create a more sustainable solution for our NHS.
+            
+            a(href='#').btn.btn--ghost.btn--ghost--muted.mt60.mt40--tablet Read About Our Mission
+    
+    // TEXT SECTION :: START
+    .section.section--white#sectionProduct
+      .container
+        .row
+          .col-sm-6
+            .section-title What Is Messly Locum?
+            .section-text.mt40.mt20--tablet We are a software platform accessed through your web browser that gives you the tools to build your locum bank and connect  you with trusted locum doctors to fill shifts quickly and safely.
+          
+          .col-sm-6
+            .video
+              i.ico.ico-play
+              iframe(width='100%', height='315', src='https://www.youtube.com/embed/s7bBR-kmVe8', frameborder='0', allowfullscreen='')
+
+
+    // HOW SECTION :: START
+    .section.section--light-blue
+      .container
+        .text-center
+          .section-title How It Works
+        .row.mt80.mt40--tablet
+          .col-sm-4
+            .how__card
+              i.ico.ico-how-medical-file
+              .how__card__title Create Your Bank
+              .how__card__description Register your department with Messly and take your staff bank online.
+          .col-sm-4
+            .how__card
+              i.ico.ico-how-hospital
+              .how__card__title Invite Your Doctors
+              .how__card__description Add trusted doctor to join your department bank and extend your reach by connecting with verified doctors from other hospital banks
+          .col-sm-4
+            .how__card
+              i.ico.ico-how-swipe
+              .how__card__title Manage Your Shifts
+              .how__card__description Your shift are sent out smartly to suitable doctors in your bank on their mobiles. <br> Doctors can search and apply for your shifts at any time.
+    
+    // BENEFITS :: START
+    .benefits#sectionFeatures
+      .container
+        .row
+          .col-sm-12.text-center
+            .section-crumb Learn More
+            .section-title How Messly benefits your department
+            .section-text.mt20 Our superior technology gives you the toolkit to manage all your departments <br> locum requirements.
+            
+            .benefits__nav
+              .benefits__nav__item(data-id='1') Locum Coordinators
+              .benefits__nav__item(data-id='2').active Department Managers
+            
+            
+            .benefits__tab(data-tab='1')
+              .benefits__slider#benefitsSlider_1
+                .benefits__tab__slide
+                  .benefits__tab__content
+                    .benefits__tab__wrapper
+                      i.ico.ico-benefit.ico-benefit-prev(data-toggle="tooltip" data-placement="left" data-html="true" title="<i class='icon icon-tachometer'></i><span>Your Own Dashboard</span> Track all your locums shifts, message candidates and send alerts for vacant shifts through your personalised dashboard")
+                      i.ico.ico-benefit.ico-benefit-next(data-toggle="tooltip" data-placement="top" data-html="true" title="<span>Click me</span> to see more")
+                      img(src='images/mbpImage_coordinator_1.png').img-responsive
+                .benefits__tab__slide
+                  .benefits__tab__content
+                    .benefits__tab__wrapper
+                      i.ico.ico-benefit.ico-benefit-prev(data-toggle="tooltip" data-placement="left" data-html="true" title="<i class='icon icon-bullseye'></i><span>Improve Fill Rates</span>Effortlessly post and manage your shifts, doctors are alerted to your vacancies via mobile and can apply in one click.")
+                      i.ico.ico-benefit.ico-benefit-next(data-toggle="tooltip" data-placement="top" data-html="true" title="<span>Click me</span> to see more")
+                      img(src='images/mbpImage_coordinator_2.png').img-responsive
+                .benefits__tab__slide
+                  .benefits__tab__content
+                    .benefits__tab__wrapper
+                      i.ico.ico-benefit.ico-benefit-prev(data-toggle="tooltip" data-placement="left" data-html="true" title="<i class='icon icon-lock'></i><span>Your Trusted Bank</span>Invite trusted doctors to your  bank and find doctors vetted by other departmetns to create a pool of doctors to fill your shifts")
+                      i.ico.ico-benefit.ico-benefit-next(data-toggle="tooltip" data-placement="top" data-html="true" title="<span>Click me</span> to see more")
+                      img(src='images/mbpImage_coordinator_3.png').img-responsive
+                
+            .benefits__tab.active(data-tab='2')
+              .benefits__slider#benefitsSlider_2
+                .benefits__tab__slide
+                  .benefits__tab__content
+                    .benefits__tab__wrapper
+                      i.ico.ico-benefit.ico-benefit-prev(data-toggle="tooltip" data-placement="left" data-html="true" title="<i class='icon icon-lightbulb-o'></i><span>Understand Vacancies</span> Compare application ratios, reasons for locum shifts and locum shift patterns to better understand the reasons for your vacancies")
+                      i.ico.ico-benefit.ico-benefit-next(data-toggle="tooltip" data-placement="top" data-html="true" title="<span>Click me</span> to see more")
+                      img(src='images/mbpImage_manager_1.png').img-responsive
+                .benefits__tab__slide
+                  .benefits__tab__content
+                    .benefits__tab__wrapper
+                      i.ico.ico-benefit.ico-benefit-prev(data-toggle="tooltip" data-placement="left" data-html="true" title="<i class='icon icon-bullseye'></i><span>Monitor Spending</span>Get a detailed breakdown of locum spending each week and avoid bill shock at the end of each month.")
+                      i.ico.ico-benefit.ico-benefit-next(data-toggle="tooltip" data-placement="top" data-html="true" title="<span>Click me</span> to see more")
+                      img(src='images/mbpImage_manager_2.png').img-responsive
+                .benefits__tab__content
+                  .benefits__tab__content
+                    .benefits__tab__wrapper
+                      i.ico.ico-benefit.ico-benefit-prev(data-toggle="tooltip" data-placement="left" data-html="true" title="<i class='icon icon-lock'></i><span>Set your rates</span>Control internal rates and caps for the department, track fill rates and handle exceptional requests from your staff managers.")
+                      i.ico.ico-benefit.ico-benefit-next(data-toggle="tooltip" data-placement="top" data-html="true" title="<span>Click me</span> to see more")
+                      img(src='images/mbpImage_manager_3.png').img-responsive
+        
+        .row.benefits__list
+          .col-sm-4
+            i.icon.icon-bullseye
+            .benefits__list__title Improve your fill rates
+            .benefits__list__description Powering your departments bank with Messly has been proven to  mprove fill rates. Read our case study here
+          .col-sm-4
+            i.icon.icon-clock-o
+            .benefits__list__title Last minute locums
+            .benefits__list__description Urgent shifts that come are instantly sent to the most suitable doctors, to fill those dreaded last minute vacancies
+          .col-sm-4
+            i.icon.icon-shield
+            .benefits__list__title Trusted Doctors
+            .benefits__list__description Doctors are all verified with detailed profiles, so you know exactly who’s turning up for your shift and how much experience they have.
+        
+        .row.benefits__list
+          .col-sm-4
+            i.icon.icon-list-alt
+            .benefits__list__title Manage your vacancies
+            .benefits__list__description Post and all your locum shifts through your personal dashboard and message candidates directly. 
+          .col-sm-4
+            i.icon.icon-desktop
+            .benefits__list__title Easy to use
+            .benefits__list__description Accessible directly <br> through your web browser and <br> designed for ‘no learning’
+          .col-sm-4
+            i.icon.icon-question-circle
+            .benefits__list__title We’re here to help
+            .benefits__list__description  We want to make sure you have a great experience so we’ll be hands on to help you get started from day one.
+            
+              
+    // ABOUT :: START
+    .section.section--about
+      .container
+        .row
+          .col-sm-6
+            .about__content
+              .section-title
+                i.icon.icon-slideshare
+                span We are not an agency
+              .section-text.mt15 We are Abrar & Chris, best mates since 13 who came together a year ago to try and solve the complex challenges facing the NHS. With Abrar’s medical background and tech savyness and Chris’ corporate and strategic expertise we’re passionate about creating something to solve the inefficiencies of healthcare recruitment and improve the working lives of doctors. Messly is that something.
+          .col-sm-6
+            .about__image
+              img(src='images/aboutFounders@2x.png')
+              .about__image__tag Abrar & Chris, <span>Founders of Messly</span>
+      
+    // TESTIMONIALS :: START
+    .section.section--testimonials#sectionTestimonails
+      .container
+        .row
+          .col-sm-12.text-center
+            .section-crumb Testimonials
+            .section-title What hospitals think of us
+            .section-text.mt20 Don’t take our word for it, here’s what some <br> of our users have to say about us
+        .row
+          .col-sm-4
+            .testimonials__card
+              //- .testimonials__logo
+              //-   i.ico.ico-airbnb
+              .testimonials__content “Enjoyed using Messly to find locum work. It’s been really easy to use and gives me much more visibility on available work“
+              .testimonials__author
+                img(src='images/el/userpic_1.png')
+                span Chris <span>ST2+, Anaesthetics</span>
+          .col-sm-4
+            .testimonials__card
+              //- .testimonials__logo
+              //-   i.ico.ico-flickr
+              .testimonials__content “I’ve found it easy to use Messly to <br> find locum doctors, much less hassle <br> than sending out dozens of emails! “
+              .testimonials__author
+                img(src='images/el/userpic_2.png')
+                span Anna <span>Rota Coordinator</span>
+          .col-sm-4
+            .testimonials__card
+              //- .testimonials__logo
+              //-   i.ico.ico-vine
+              .testimonials__content “Our department has benefited <br> from implementing Messly - we spend <br> less time finding locums “
+              .testimonials__author
+                img(src='images/el/userpic_3.png')
+                span Keith <span>Consultant</span>
+
+
+    // BONUS :: START
+    .bonus
+      .container
+        .text-center
+          .section-title Request a free trial for your department
+          .section-text.mt30 No paperwork. We’ll get you setup in no time and <br> it’s completely free of charge.
+        
+        form(action='#').bonus__form.mt50
+          .row
+            .col-sm-9
+              .row
+                .col-sm-4
+                  .ui-input.ui-input--muted
+                    input(type='text' placeholder='Your name')
+                .col-sm-4
+                  .ui-input.ui-input--muted
+                    input(type='email' placeholder='Your email')
+                .col-sm-4
+                  .ui-input.ui-input--muted
+                    input(type='text' placeholder='Hospital')
+            .col-sm-3
+              a(href='#').btn.btn--red.btn--block
+                i.icon.icon-user-md
+                span Contact Me
+                    
+            
+    include shared/footer.pug

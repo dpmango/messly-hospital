@@ -1,0 +1,139 @@
+// ICONS
+.ico
+  display: inline-block
+  font-style: normal
+  content: ' '
+  background-repeat: no-repeat
+  background-position: center
+  background-size: contain
+  vertical-align: middle
+
+  &-logo
+    background-image: url('../images/el/V2awhite@2x.png')
+    size: 229px 64px
+    @media($mobile)
+      size: 180px 50px
+    @media($mobile-s)
+      size: 160px 45px
+    @media(width <= 374px)
+      size: 140px 40px
+
+  &-social-fb
+    background-image: svg-load('../../images/svg/social-facebook.svg', fill=#fff)
+    size: 30px
+    &:hover
+      background-image: svg-load('../../images/svg/social-facebook.svg', fill=$fontColorMuted)
+
+  &-social-tw
+    background-image: svg-load('../../images/svg/social-twitter.svg', fill=#fff)
+    size: 30px
+    &:hover
+      background-image: svg-load('../../images/svg/social-twitter.svg', fill=$fontColorMuted)
+
+  &-how-medical-file
+    background-image: svg-load('../../images/svg/how-medical-file.svg')
+    size: 64px
+  &-how-hospital
+    background-image: svg-load('../../images/svg/how-hospital.svg')
+    size: 64px
+  &-how-swipe
+    background-image: svg-load('../../images/svg/how-swipe.svg')
+    size: 64px
+
+  &-airbnb
+    background-image: svg-load('../../images/svg/airbnb-logo.svg')
+    size: 125px 39px
+  &-flickr
+    background-image: svg-load('../../images/svg/flickr-logo.svg')
+    size: 92px 28px
+  &-vine
+    background-image: svg-load('../../images/svg/vine-logo.svg')
+    size: 88px 34px
+  &-play
+    background-image: svg-load('../../images/svg/ico-play.svg')
+    size: 56px 82px
+    cursor: pointer
+
+// ICONMOON
+[class^="icon-"], [class*=" icon-"]
+  font-family: 'icomoon' !important
+  speak: none
+  font-style: normal
+  font-weight: normal
+  font-variant: normal
+  text-transform: none
+  line-height: 1
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+.icon-clock-o:before
+  content: "\f017"
+
+.icon-list-alt:before
+  content: "\f022"
+
+.icon-lock:before
+  content: "\f023"
+
+.icon-question-circle:before
+  content: "\f059"
+
+.icon-money:before
+  content: "\f0d6"
+
+.icon-dashboard:before
+  content: "\f0e4"
+
+.icon-tachometer:before 
+  content: "\f0e4"
+
+.icon-lightbulb-o:before
+  content: "\f0eb"
+
+.icon-building-o:before
+  content: "\f0f7"
+
+.icon-hospital-o:before
+  content: "\f0f8"
+
+.icon-desktop:before
+  content: "\f108"
+
+.icon-shield:before
+  content: "\f132"
+
+.icon-bullseye:before
+  content: "\f140"
+
+.icon-slideshare:before
+  content: "\f1e7"
+
+
+.ie8
+  .ico
+    &-logo
+      background-image: url('../images/el/V2awhite.png')
+    &-airbnb
+      background-image: url('../images/el/airbnb-logo.png')
+    &-flickr
+      background-image: url('../images/el/flickr-logo.png')
+    &-vine
+      background-image: url('../images/el/vine-logo.png')
+    &-play
+      background-image: url('../images/el/play.png')
+    &-social-fb
+      background-image: url('../images/el/social-facebook.png')
+      &:hover
+        background-image: url('../images/el/social-facebook.png')
+
+    &-social-tw
+      background-image: url('../images/el/social-twitter.png')
+      &:hover
+        background-image: url('../images/el/social-twitter.png')
+
+    &-how-medical-file
+      background-image: url'../images/el/how-medical-file.png')
+    &-how-hospital
+      background-image: url('../images/el/how-hospital.png')
+    &-how-swipe
+      background-image: url('../images/el/how-swipe.png')

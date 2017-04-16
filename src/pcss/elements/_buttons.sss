@@ -1,0 +1,76 @@
+// buttons
+button
+  &:focus
+    outline: none
+
+.btn
+  font-family: 'ProximaNova-Regular'
+  display: inline-block
+  position: relative
+  text-align: center
+  transition: all $transitionSpeed ease-in-out
+  &:focus, &:active
+    outline: none
+
+
+  &--ghost
+    padding: 11px 22px
+    background: transparent
+    border-radius: 6px
+    border: 1px solid transparent
+    &--white
+      border-color: color(white a(40%))
+      &:hover
+        background: white
+        color: $fontColor
+    &--muted
+      color: #7F8FA4
+      border-color: #8DABC4
+      color: $fontColorMuted
+      &:hover
+        background: #8DABC4
+        color: white
+
+  &--red
+    position: relative
+    background: $colorRed
+    color: white
+    border-radius: 6px
+    padding: 20px 20px
+    &::after
+      display: block
+      content: ' '
+      position: absolute 0 0 0 0
+      border-radius: 6px
+      opacity: 0
+      border: 2px solid white
+      transition: all $transitionSpeed ease-in-out
+
+    &:hover
+      background: $fontColor
+      &::after
+        position: absolute 4px
+        opacity: 1
+
+  &--green
+    background: $colorGreen
+    color: white
+    border-radius: 6px
+    padding: 20px 20px
+    &::after
+      display: block
+      content: ' '
+      position: absolute 0 0 0 0
+      border-radius: 6px
+      opacity: 0
+      border: 2px solid white
+      transition: all $transitionSpeed ease-in-out
+    &:hover
+      background: $colorRed
+      color: white
+      &::after
+        position: absolute 4px
+        opacity: 1
+
+  &--block
+    display: block

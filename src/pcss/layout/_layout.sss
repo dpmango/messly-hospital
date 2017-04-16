@@ -1,0 +1,36 @@
+*
+  box-sizing: border-box
+
+a
+  text-decoration: none
+  &:hover, &:focus, &:visited
+    text-decoration: none
+
+ul
+  list-style: none
+  li
+    display: inline-block
+
+
+body, html
+  background: white
+  color: $fontColor
+  font-family: 'ProximaNova-Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif
+  font-size: 16px
+  max-width: 100%
+  overflow-x: hidden
+  margin: 0
+  // -webkit-font-smoothing: antialiased
+  // -moz-osx-font-smoothing: grayscale
+
+.container
+  position: relative
+  max-width: 1440px
+  width: 100%
+  margin-left: auto
+  margin-right: auto
+  padding-left: 15px
+  padding-right: 15px
+  &--no-pad
+    padding-left: 0
+    padding-right: 0

@@ -1,0 +1,205 @@
+// THIS MIGHT INCLUDE HEADER, FOOTER AND OTHER
+// COMMON ELEMENTS ACROSS THE SITE
+
+// HEADER
+.header
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  color: white
+  z-index: 9
+  padding-top: 35px
+  padding-bottom: 20px
+  transition: transform .3s ease-in-out
+  a
+    color: white
+  &__menu
+    text-align: center
+    margin-top: 23px
+    ul
+      margin: 0
+      font-family: 'ProximaNova-Regular'
+      li
+        display: inline-block
+        margin-right: 25px
+
+  &__user
+    font-family: 'ProximaNova-Regular'
+    text-align: right
+    margin-top: 12px
+    a
+      display: inline-block
+      margin-right: 25px
+      &:last-child
+        margin-right: 0
+  &--transformed
+    position: fixed
+    opacity: 0
+    background: #354052
+    padding-top: 10px
+    padding-bottom: 10px
+    transform: translate3d(0, -100%, 0)
+    box-shadow: 0 3px 7px color(black a(25%))
+    .ico-logo
+      size: 180px 50px
+    .header__menu
+      margin-top: 14px
+    .header__user
+      margin-top: 4px
+  &--sticky
+    opacity: 1
+    transform: translate3d(0, 0, 0)
+
+.ie8
+  .header
+    &--transformed
+      .ico-logo
+        size: 229px 64px
+
+@media(width <= 920px)
+  .header
+    &__menu
+      display: none
+
+@media($tablet)
+  .header
+    padding-top: 20px
+    &__user
+      margin-top: 0px
+    &--transformed
+      padding-top: 10px
+
+@media($mobile-s)
+  .header
+    &__user
+      a
+        font-size: 14px
+        margin-right: 10px
+    &--transformed
+      .ico-logo
+        size: 160px 45px
+
+@media(width <= 374px)
+  .header
+    &__user
+      margin-top: 0
+      text-align: center
+      a
+        display: block
+        margin-right: 0
+        margin-bottom: 10px
+        max-width: 100px
+        margin-left: auto
+        &:last-child
+          margin-bottom: 0
+    &--transformed
+      position: absolute
+
+// FOOTER
+.footer
+  border-top: 1px solid color(white a(70%))
+  padding: 30px 0
+  background: #354052
+  color: white
+  a
+    color: white
+  &__socials
+    a
+      margin-right: 18px
+      &:last-child
+        margin-right: 0
+  &__menu
+    display: inline-block
+    a
+      display: inline-block
+      margin-right: 30px
+      font-family: 'ProximaNova-Regular'
+      &:last-child
+        margin-right: 0
+  &__copy
+    font-size: 14px
+    color: $colorWhiteMuted
+
+@media($tablet)
+  .footer
+    &__socials
+      margin-bottom: 15px
+      text-align: center
+    &__menu
+      font-size: 15px
+      margin-bottom: 15px
+      a
+        margin-right: 25px
+        margin-bottom: 10px
+
+    &__copy
+      text-align: center
+
+
+
+// SLICK
+.slick-slide
+  outline: none
+
+
+// ANIMATION CLASSES
+a.hoverable-dash
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    height: 2px
+    left: 50%
+    right: 50%
+    transition: $transitionSpeed all
+    opacity: 0
+    bottom: -4px
+    background-color: white
+  &:hover, &.active
+    &:after
+      left: 0
+      right: 0
+      opacity: 1
+
+
+// VIDEO
+.video
+  position: relative
+  overflow: hidden
+  border-radius: 6px
+  font-size: 0
+  &.playing
+    &::after
+      opacity: 0
+      pointer-events: none
+    .ico-play
+      opacity: 0
+      pointer-events: none
+  .ico-play
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 3
+    transition: all $transitionSpeed ease
+    &:hover
+      transform: translate(-50%, -50%) scale(1.15)
+  &::after
+    display: block
+    content: ' '
+    position: absolute 0 0 0 0
+    background: black
+    opacity: .5
+    -ms-filter: “alpha(opacity=50)”
+    filter: alpha(opacity=50)
+    transition: all $transitionSpeed ease
+
+@media($tablet)
+  .video
+    margin-top: 30px
+
+.ie8
+  .video
+    &::after, .ico-play
+      display: none
