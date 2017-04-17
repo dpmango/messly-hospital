@@ -890,7 +890,15 @@ a.hoverable-dash:hover:after, a.hoverable-dash.active:after {
         font-size: 48px;
     }
     .hero__form .ui-input {
+        margin-right: auto;
         margin-bottom: 10px;
+        margin-left: auto;
+        max-width: 400px;
+    }
+    .hero__form .btn {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 400px;
     }
 }
 @media(max-width: 568px) {
@@ -1129,11 +1137,18 @@ a.hoverable-dash:hover:after, a.hoverable-dash.active:after {
 .benefits__tab .ico-benefit-next {
     right: 15.5%;
 }
+.benefits__tab--icons {
+    background: none;
+}
 .benefits__tab.active {
     display: block;
 }
 .benefits__tab__slide {
+    overflow: hidden;
     text-align: center;
+}
+.benefits__tab__content {
+    position: relative;
 }
 .benefits__tab__wrapper {
     position: relative;
@@ -1349,7 +1364,15 @@ a.hoverable-dash:hover:after, a.hoverable-dash.active:after {
         padding-bottom: 80px;
     }
     .bonus__form .ui-input {
+        margin-right: auto;
         margin-bottom: 10px;
+        margin-left: auto;
+        max-width: 400px;
+    }
+    .bonus__form .btn {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 400px;
     }
 }
 @media(max-width: 568px) {

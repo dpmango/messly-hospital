@@ -29,4 +29,4 @@ __Production__
 
 
 ### Recend push command
-gulp build && git add . && git commit -m "init" && git push
+gulp build && git add . && git commit -m "fixes r1" && git push

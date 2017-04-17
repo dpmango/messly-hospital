@@ -102,20 +102,30 @@ doctype html
               .benefits__slider#benefitsSlider_1
                 .benefits__tab__slide
                   .benefits__tab__content
+                    .tooltip.left.non-hoverable
+                      .tooltip-inner
+                        <i class='icon icon-tachometer'></i><span>Your Own Dashboard</span> Track all your locums shifts, message candidates and send alerts for vacant shifts through your personalised dashboard
                     .benefits__tab__wrapper
-                      i.ico.ico-benefit.ico-benefit-prev(data-toggle="tooltip" data-placement="left" data-html="true" title="<i class='icon icon-tachometer'></i><span>Your Own Dashboard</span> Track all your locums shifts, message candidates and send alerts for vacant shifts through your personalised dashboard")
+                      i.ico.ico-benefit.ico-benefit-prev
                       i.ico.ico-benefit.ico-benefit-next(data-toggle="tooltip" data-placement="top" data-html="true" title="<span>Click me</span> to see more")
                       img(src='images/mbpImage_coordinator_1.png').img-responsive
                 .benefits__tab__slide
                   .benefits__tab__content
+                    .tooltip.left.non-hoverable
+                      .tooltip-inner
+                        <i class='icon icon-bullseye'></i><span>Improve Fill Rates</span>Effortlessly post and manage your shifts, doctors are alerted to your vacancies via mobile and can apply in one click.
                     .benefits__tab__wrapper
-                      i.ico.ico-benefit.ico-benefit-prev(data-toggle="tooltip" data-placement="left" data-html="true" title="<i class='icon icon-bullseye'></i><span>Improve Fill Rates</span>Effortlessly post and manage your shifts, doctors are alerted to your vacancies via mobile and can apply in one click.")
+                      i.ico.ico-benefit.ico-benefit-prev
                       i.ico.ico-benefit.ico-benefit-next(data-toggle="tooltip" data-placement="top" data-html="true" title="<span>Click me</span> to see more")
                       img(src='images/mbpImage_coordinator_2.png').img-responsive
                 .benefits__tab__slide
                   .benefits__tab__content
+                    .tooltip.left.non-hoverable
+                      .tooltip-inner
+                        <i class='icon icon-lock'></i><span>Your Trusted Bank</span>Invite trusted doctors to your  bank and find doctors vetted by other departmetns to create a pool of doctors to fill your shifts
                     .benefits__tab__wrapper
-                      i.ico.ico-benefit.ico-benefit-prev(data-toggle="tooltip" data-placement="left" data-html="true" title="<i class='icon icon-lock'></i><span>Your Trusted Bank</span>Invite trusted doctors to your  bank and find doctors vetted by other departmetns to create a pool of doctors to fill your shifts")
+                      i.ico.ico-benefit.ico-benefit-prev
+                      
                       i.ico.ico-benefit.ico-benefit-next(data-toggle="tooltip" data-placement="top" data-html="true" title="<span>Click me</span> to see more")
                       img(src='images/mbpImage_coordinator_3.png').img-responsive
                 
@@ -123,24 +133,61 @@ doctype html
               .benefits__slider#benefitsSlider_2
                 .benefits__tab__slide
                   .benefits__tab__content
+                    .tooltip.left.non-hoverable
+                      .tooltip-inner
+                        <i class='icon icon-lightbulb-o'></i><span>Understand Vacancies</span> Compare application ratios, reasons for locum shifts and locum shift patterns to better understand the reasons for your vacancies
                     .benefits__tab__wrapper
-                      i.ico.ico-benefit.ico-benefit-prev(data-toggle="tooltip" data-placement="left" data-html="true" title="<i class='icon icon-lightbulb-o'></i><span>Understand Vacancies</span> Compare application ratios, reasons for locum shifts and locum shift patterns to better understand the reasons for your vacancies")
+                      i.ico.ico-benefit.ico-benefit-prev
                       i.ico.ico-benefit.ico-benefit-next(data-toggle="tooltip" data-placement="top" data-html="true" title="<span>Click me</span> to see more")
                       img(src='images/mbpImage_manager_1.png').img-responsive
                 .benefits__tab__slide
                   .benefits__tab__content
+                    .tooltip.left.non-hoverable
+                      .tooltip-inner
+                        <i class='icon icon-bullseye'></i><span>Monitor Spending</span>Get a detailed breakdown of locum spending each week and avoid bill shock at the end of each month.
                     .benefits__tab__wrapper
-                      i.ico.ico-benefit.ico-benefit-prev(data-toggle="tooltip" data-placement="left" data-html="true" title="<i class='icon icon-bullseye'></i><span>Monitor Spending</span>Get a detailed breakdown of locum spending each week and avoid bill shock at the end of each month.")
+                      i.ico.ico-benefit.ico-benefit-prev
                       i.ico.ico-benefit.ico-benefit-next(data-toggle="tooltip" data-placement="top" data-html="true" title="<span>Click me</span> to see more")
                       img(src='images/mbpImage_manager_2.png').img-responsive
                 .benefits__tab__content
                   .benefits__tab__content
+                    .tooltip.left.non-hoverable
+                      .tooltip-inner
+                        <i class='icon icon-lock'></i><span>Set your rates</span>Control internal rates and caps for the department, track fill rates and handle exceptional requests from your staff managers.
                     .benefits__tab__wrapper
-                      i.ico.ico-benefit.ico-benefit-prev(data-toggle="tooltip" data-placement="left" data-html="true" title="<i class='icon icon-lock'></i><span>Set your rates</span>Control internal rates and caps for the department, track fill rates and handle exceptional requests from your staff managers.")
+                      i.ico.ico-benefit.ico-benefit-prev
                       i.ico.ico-benefit.ico-benefit-next(data-toggle="tooltip" data-placement="top" data-html="true" title="<span>Click me</span> to see more")
                       img(src='images/mbpImage_manager_3.png').img-responsive
         
-        .row.benefits__list
+        .row.benefits__list.benefits__tab.benefits__tab--icons(data-tab='1')
+          .col-sm-4
+            i.icon.icon-building-o
+            .benefits__list__title Reduced agency spend
+            .benefits__list__description Maximise fill rates with cheaper bank staff to avoid paying unnecessary agency commissions.
+          .col-sm-4
+            i.icon.icon-clock-o
+            .benefits__list__title Save staff time
+            .benefits__list__description Swifter shift filling reduces valuable staff time spend searching for candidates – freeing up time for higher value tasks.
+          .col-sm-4
+            i.icon.icon-lightbulb-o
+            .benefits__list__title Data-driven insights
+            .benefits__list__description  Insights into locum vacancies and spending enabling you to plan your workforce more efficiently and save money for your department.
+        
+        .row.benefits__list.benefits__tab.benefits__tab--icons(data-tab='1')
+          .col-sm-4
+            i.icon.icon-money
+            .benefits__list__title Reduced consultant spend
+            .benefits__list__description Reduce instances of consultants ‘stepping down’ to take unfilled trainee shifts at much higher rates (and with additional time in lieu).
+          .col-sm-4
+            i.icon.icon-desktop
+            .benefits__list__title Easy to use
+            .benefits__list__description Accessible directly <br> through your web browser and <br> designed for ‘no learning’
+          .col-sm-4
+            i.icon.icon-question-circle
+            .benefits__list__title We’re here to help
+            .benefits__list__description  We want to make sure you have a great experience so we’ll be hands on to help you get started from day one.
+                          
+        .row.benefits__list.benefits__tab.benefits__tab--icons.active(data-tab='2')
           .col-sm-4
             i.icon.icon-bullseye
             .benefits__list__title Improve your fill rates
@@ -154,7 +201,7 @@ doctype html
             .benefits__list__title Trusted Doctors
             .benefits__list__description Doctors are all verified with detailed profiles, so you know exactly who’s turning up for your shift and how much experience they have.
         
-        .row.benefits__list
+        .row.benefits__list.benefits__tab.benefits__tab--icons.active(data-tab='2')
           .col-sm-4
             i.icon.icon-list-alt
             .benefits__list__title Manage your vacancies
@@ -167,7 +214,7 @@ doctype html
             i.icon.icon-question-circle
             .benefits__list__title We’re here to help
             .benefits__list__description  We want to make sure you have a great experience so we’ll be hands on to help you get started from day one.
-            
+          
               
     // ABOUT :: START
     .section.section--about

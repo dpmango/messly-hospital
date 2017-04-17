@@ -1915,12 +1915,51 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
   .tooltip.left {
     margin-left: -3px;
     padding: 0 13px; }
+  .tooltip.non-hoverable {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    opacity: 1 !important; }
+    .tooltip.non-hoverable.left {
+      top: 60px;
+      left: 50px;
+      width: 260px; }
+      .tooltip.non-hoverable.left:after {
+        position: absolute;
+        top: 50%;
+        right: 1px;
+        z-index: -1;
+        display: block;
+        margin-top: -13px;
+        width: 22px;
+        height: 22px;
+        background: #FAFBFC;
+        -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+                box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+        content: ' ';
+        -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+                transform: rotate(45deg); }
+
+@media (max-width: 1380px) {
+  .tooltip.non-hoverable.left {
+    left: 0; } }
+
+@media (max-width: 1320px) {
+  .tooltip.non-hoverable.left {
+    position: static !important;
+    left: 0;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto; }
+    .tooltip.non-hoverable.left:after {
+      display: none; } }
 
 .tooltip-inner {
   padding: 35px 60px;
   max-width: 260px;
   border-radius: 8px;
   background-color: #7DC855;
+  -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
   color: #fff;
   color: rgba(255, 255, 255, 0.6);
   text-align: center;
@@ -3230,7 +3269,15 @@ a.hoverable-dash:hover:after, a.hoverable-dash.active:after {
         font-size: 48px;
     }
     .hero__form .ui-input {
+        margin-right: auto;
         margin-bottom: 10px;
+        margin-left: auto;
+        max-width: 400px;
+    }
+    .hero__form .btn {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 400px;
     }
 }
 @media(max-width: 568px) {
@@ -3469,11 +3516,18 @@ a.hoverable-dash:hover:after, a.hoverable-dash.active:after {
 .benefits__tab .ico-benefit-next {
     right: 15.5%;
 }
+.benefits__tab--icons {
+    background: none;
+}
 .benefits__tab.active {
     display: block;
 }
 .benefits__tab__slide {
+    overflow: hidden;
     text-align: center;
+}
+.benefits__tab__content {
+    position: relative;
 }
 .benefits__tab__wrapper {
     position: relative;
@@ -3689,7 +3743,15 @@ a.hoverable-dash:hover:after, a.hoverable-dash.active:after {
         padding-bottom: 80px;
     }
     .bonus__form .ui-input {
+        margin-right: auto;
         margin-bottom: 10px;
+        margin-left: auto;
+        max-width: 400px;
+    }
+    .bonus__form .btn {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 400px;
     }
 }
 @media(max-width: 568px) {
