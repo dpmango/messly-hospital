@@ -375,11 +375,13 @@ body, html {
     background-image: url('../images/el/social-twitter.png');
 }
 .ie8 .ico-how-medical-file {
-    background-image: url'../images/el/how-medical-file.png')
-    &-how-hospital
-      background-image: url('../images/el/how-hospital.png')
-    &-how-swipe
-      background-image: url('../images/el/how-swipe.png');
+    background-image: url('../images/el/how-medical-file.png');
+}
+.ie8 .ico-how-hospital {
+    background-image: url('../images/el/how-hospital.png');
+}
+.ie8 .ico-how-swipe {
+    background-image: url('../images/el/how-swipe.png');
 }
 /* buttons */
 button {}
